@@ -49,7 +49,6 @@ buttons.forEach((e) => {
         input.value = eval(temp);
         s1 = eval(temp);
         temp = s1;
-        console.log(temp);
       }
     }
   });
