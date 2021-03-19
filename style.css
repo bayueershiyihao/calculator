@@ -1,0 +1,54 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(5, 60px);
+  padding: 40px;
+  gap: 7px;
+  background-color: black;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #363539;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+input {
+  padding: 0px 15px;
+  text-align: right;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  grid-column: 1 / 3 span;
+}
+
+button[value="0"] {
+  grid-column: 1 / 2 span;
+}
+
+.clear {
+  background-color: #a7aab0;
+}
+
+.plus,
+.minus,
+.multiply,
+.division {
+  background-color: #fd8f00;
+}
+
+button:active {
+  box-shadow: inset 120px 60px rgba(0, 0, 0, 0.2);
+}
